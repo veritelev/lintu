@@ -1,0 +1,449 @@
+html {
+    scroll-behavior: smooth;
+    scroll-margin-top: 200px;
+}
+body {
+    background-color: #eb2727;
+    color: #570044;
+    margin: 0;
+    height: 4697px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 20px;
+    background: var(--unnamed, linear-gradient(0deg, #F3E7E9 0%, #E3EEFF 100%));
+    position: relative;
+    z-index: -7;
+    
+}
+.header1 {
+    height: 72px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.40);
+    box-shadow:0px 4px 10px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(8px);
+    position: fixed;
+    color: #570044;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+.header_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1180px;
+}
+.header_logo_link {
+    background-image: url(/images/Logo_colour_header.svg);
+    width: 151px;
+    height: 56px;
+    
+}
+.header_menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.header_menu_item_link {
+    text-decoration: none;
+    transition: 300ms;
+}
+.header_menu_item_link:hover {
+    color:#eb2727;
+}
+.header_menu_item {
+    margin-left: 35px;
+}
+#header_menu_item1 {
+    margin-left: 0;
+}
+.first_screen {
+    display: flex;
+    width: 100%;
+    background-image: url("/images/Main_img.png");
+    background-size:cover;
+    background-position: center;
+    justify-content: center;
+    height: 768px;
+    position: relative;
+    
+}
+.element_1 {
+    position: absolute;
+    width: 659px;
+    height: 675px;
+    top: 93px;
+    right:27px;
+}
+.first_screen_wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 1180px;
+    margin-top: 225px;
+}
+.first_screen_left {
+    width: 480px; 
+    margin: 0;
+}
+h1 {
+    font-family: "Ubuntu";
+    font-size: 73px;
+    line-height: 71px;
+    margin: 0;
+}
+.first_screen_p {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 40px 0 0 0;
+}
+.first_screen_btn {
+    color: #FFF;
+    font-family: Ubuntu;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25), 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    background: linear-gradient(225deg, #FF057C 0%, #8D0B93 50.51%, #321575 100%);
+    padding: 24px 48px;
+    border: none;
+    margin: 68px 0 0 0;
+    cursor: pointer;
+    position: relative;
+}
+.first_screen_btn::after{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), linear-gradient(225deg, #FF057C 0%, #8D0B93 50.51%, #321575 100%);
+    opacity: 0;
+    border-radius: 20px;
+    content:"";
+    transition: opacity 300ms;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+.first_screen_btn:hover::after{
+    opacity: 1;
+}
+.first_screen_right {
+    display: inline-block;
+    margin: 0;
+}
+.first_screen_img {
+    width: 605px;
+    height: 337px;
+}
+.second_screen {
+    width: 100%;
+    height: 918px;
+    background: rgba(219, 0, 255, 0.07);
+    position: relative;
+    z-index: -5;
+}
+.element_2 {
+    position: absolute;
+    top: 142px;
+    z-index: -3;
+}
+.drone_2 {
+    position: absolute;
+    z-index: -2;
+    top: 44px;
+    left: 227px;
+}
+.second_screen_wrapper {
+    width: 1180px;
+    margin: 0 auto;
+    height: 758px;
+}
+h2 {
+    font-family: "Ubuntu";
+font-size: 48px;
+font-style: normal;
+font-weight: 500;
+line-height: 56px;
+margin: 0;
+}
+h3 {
+    font-family: Ubuntu;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin: 0;
+}
+.second_screen_up {
+    display: flex;
+    justify-content: end;
+    width: 1180px;
+}
+.second_screen_p {
+    width: 486px;
+    margin-top: 80px;
+}
+#second_screen_p_h {
+    text-align: right;
+}
+.second_screen_p_p {
+    font-family: Montserrat;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-top: 20px;
+text-align: right;
+
+}
+p {
+    margin: 0;
+}
+#pochemu {
+    margin: 140px auto 0;
+    width: 386px;
+    text-align: center;
+}
+.gallery_cards {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+.card {
+    padding: 42px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.70);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+backdrop-filter: blur(5px);
+}
+.card_factoid {
+    font-family: Ubuntu;
+font-size: 73px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.card_descr {
+    width: 216px;
+}
+.card_factoid_small {
+    padding-left: 15px;
+    font-family: Ubuntu;
+    font-weight: 500;
+    font-size: 25px;
+}
+.factoid {
+    padding: 6px 0;
+}
+#num1 {
+    width: 162px;
+}
+#num2 {
+    width: 173px;
+}
+#num3 {
+    width: 194px;
+}
+.third_screen {
+    width: 100%;
+    height: 996px;
+    position: relative;
+}
+.third_screen_wrapper {
+    width: 1180px;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+.steps {
+    display: flex;
+    gap: 20px;
+    margin-top: 80px;
+}
+.steps_item_img {
+    height: 94px;
+    filter: drop-shadow(0 0 5px rgb(0 0 0 / 0.4));
+}
+.steps_item_p {
+    margin-top: 5px;
+    width: 248px;
+    text-align: center;
+}
+.steps_item {
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.video-wrapper {
+    
+    width: 780px;
+    margin: 76px auto 0;
+    display: block;
+}
+.video {
+    width: 780px;
+    height: 440px;
+    border-radius: 20px;
+}
+.element_3 {
+    position: absolute;
+    z-index: -3;
+    top: 224px;
+    right: 0;
+}
+.fourth_screen {
+    width: 100%;
+    height: 760px;
+    position: relative;
+    background-image: url(../images/Reviews_img.jpg);
+}
+.h22 {
+    display: flex;
+    justify-content: end;
+}
+.fourth_screen_wrapper {
+    width: 1180px;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+.itc-slider-item {
+    font-size: 18px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.70);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(5px);
+    font-weight: 400;
+    width: 280px;
+    line-height: 1.4;
+}
+.review_logo {
+    margin: auto;
+}
+.review_text {
+    width: 216px;
+    margin-top: 20px;
+}
+.review_descr {
+    font-weight: 500;
+    margin-top: 10px;
+    width: 216px;
+}
+.fifth_screen {
+    width: 100%;
+    height: 911px;
+    position: relative;
+}
+.element_5 {
+    position: absolute;
+    width: 659px;
+    height: 675px;
+    top: 171px;
+    right:27px;
+}
+.drone_3 {
+    position: absolute;
+    z-index: -2;
+    top: 288px;
+    left: 261px;
+}
+.drone_4 {
+    position: absolute;
+    z-index: -2;
+    top: 235px;
+    right: 257px;
+}
+.fifth_screen_wrapper {
+    width: 1180px;
+    margin: 0 auto;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+.form {
+    padding-top: 80px;
+    margin: 0 auto;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 380px;
+}
+input {
+    width: 380px;
+    height: 54px;
+    background-color: #fff;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 8px;
+    outline: none;
+    color: #000;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 20px;
+}
+input:focus {
+    outline: none;
+    color: #000;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 20px;
+}
+input::placeholder {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 20px;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.persdata {
+    font-size: 15px;
+}
+.zakazat {
+    color: #FFF;
+    font-family: Ubuntu;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25), 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    background: linear-gradient(225deg, #FF057C 0%, #8D0B93 50.51%, #321575 100%);
+    padding: 24px 48px;
+    border: none;
+    margin: 68px 0 0 0;
+    cursor: pointer;
+    position: relative;
+}
+.zakazat:after {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), linear-gradient(225deg, #FF057C 0%, #8D0B93 50.51%, #321575 100%);
+    opacity: 0;
+    border-radius: 20px;
+    content:"";
+    transition: opacity 300ms;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+.zakazat:hover::after {
+    opacity: 1;
+}
+.download {
+
+    margin: 64px auto;
+}
